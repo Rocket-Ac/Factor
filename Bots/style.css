@@ -1,0 +1,243 @@
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #161C26;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    font-family: sans-serif !important;
+    font-weight: bold;
+
+}
+#w80{
+    width: 60vw;
+}
+#container {
+    display: flex;
+    justify-content: space-between;
+    align-items: stretch;
+    
+}
+#result, #form-container {
+
+
+}
+#form-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #2e3b4e;
+    border-radius: 1rem;
+    border: solid 1.5px #9e9e9e;
+    padding: 1rem;
+    margin-left: 10px;
+    
+}
+#heeader{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #2e3b4e;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    border-radius: 1rem;
+    border: solid 1.5px #9e9e9e;
+    width: 100%;
+    margin-right: 100px;
+    margin-bottom: 1rem;
+    color: #fff;
+}
+#result {
+    margin-right: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #2e3b4e;
+    padding: 1rem;
+    border-radius: 1rem;
+    border: solid 1.5px #9e9e9e;
+    width: 40rem;
+}
+#result-text {
+    resize: none;
+    width: 100%;
+    height: 20rem;
+    background-color: #212121;
+    color: #fff;
+    border: none;
+    border-radius: 0.5rem;
+    padding: 0.5rem;
+    margin-bottom: 1rem;
+}
+#copy-button {
+    background-color: #1a73e8;
+    color: #fff;
+    border: none;
+    padding: 0.5rem 1rem;
+    border-radius: 0.5rem;
+    cursor: pointer;
+}
+#copy-button:hover {
+    background-color: #155bb5;
+}
+.input-group {
+    margin-top: 20px;
+}
+
+
+.input-group {
+    position: relative;
+    
+}
+.input {
+    border: solid 1.5px #9e9e9e;
+    border-radius: 1rem;
+    background: none;
+    padding: 1rem;
+    font-size: 1rem;
+    color: #f5f5f5;
+    transition: border 150ms cubic-bezier(0.4,0,0.2,1);
+}
+.user-label {
+    position: absolute;
+    left: 15px;
+    color: #e8e8e8;
+    pointer-events: none;
+    transform: translateY(1rem);
+    transition: 150ms cubic-bezier(0.4,0,0.2,1);
+}
+.input:focus, input:valid {
+    outline: none;
+    border: 1.5px solid #1a73e8;
+}
+.input:focus ~ label, input:valid ~ label {
+    transform: translateY(-50%) scale(0.8);
+    background-color: #2e3b4e;
+    padding: 0 .2em;
+    color: #2196f3;
+    border-radius: 10px;
+}
+#payer ~ label, input:valid ~ label{
+    transform: translateY(-50%) scale(0.8);
+    background-color: #2e3b4e;
+    padding: 0 .2em;
+    color: #2196f3;
+    
+}
+#payer{
+    outline: none;
+    border: 1.5px solid #1a73e8;
+}
+select {
+    text-align: center;
+    width: 230px;
+    padding: 0.5rem 1rem;
+    margin-top: 20px;
+    border-radius: 0.5rem;
+    border: 1.5px solid #9e9e9e;
+    background-color: transparent;
+    color: #fff;
+    font-size: 1rem;
+    appearance: none;
+}
+select:focus {
+    outline: none;
+    color: #155bb5;
+    border-color: #1a73e8;
+    box-shadow: 0 0 5px #62B7ED;
+}
+button[type="submit"] {
+    margin-top: 20px;
+    width: 230px;
+    height: 2.5rem;
+    padding: 0.5rem 1rem;
+    background-color: #1a73e8;
+    color: #fff;
+    border: none;
+    border-radius: 0.5rem;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+button[type="submit"]:hover {
+    background-color: #155bb5;
+}
+.Bot-ID{
+    margin-top: 10px !important;
+}
+/* اعمال cursor: text فقط برای المان‌های ورودی */
+input, textarea, select {
+    cursor: text;
+}
+
+/* جلوگیری از نمایش caret در سایر قسمت‌های صفحه */
+body {
+    user-select: none; /* جلوگیری از انتخاب متن */
+    cursor: default; /* تنظیم نشانگر پیش‌فرض */
+}
+
+body * {
+    user-select: text; /* بازگرداندن انتخاب متن برای همه المان‌ها */
+}
+
+
+#copy-button {
+    background-color: #1a73e8;
+    width: 10rem;
+    height: 2.5rem;
+    border: none;
+    border-radius: 10px;
+    font-weight: 600;
+    overflow: hidden;
+    transition-duration: 700ms;
+  }
+  
+#copy-button span:first-child {
+    color: #ffffff;
+    position: absolute;
+    transform: translate(-50%, -50%)
+}
+  
+#copy-button span:last-child {
+    position: absolute;
+    color: #ffffff;
+    opacity: 0;
+    transform: translateY(100%) translateX(-50%);
+    height: 14px;
+    line-height: 13px;
+}
+  
+#copy-button:focus {
+    background-color: #ffffff;
+    width: 120px;
+    height: 40px;
+    transition-delay: 100ms;
+    transition-duration: 500ms;
+}
+  
+#copy-button:focus span:first-child {
+    color: #B5CCF3;
+    transform: translateX(-50%) translateY(-150%);
+    opacity: 0;
+    transition-duration: 500ms;
+  }
+  
+#copy-button:focus span:last-child {
+    transform: translateX(-50%) translateY(-50%);
+    opacity: 100;
+    transition-delay: 300ms;
+    transition-duration: 500ms;
+}
+  
+#copy-button:focus:end {
+    background-color: #FFFFFF;
+    width: 120px;
+    height: 40px;
+    transition-duration: 900ms;
+}
+  
