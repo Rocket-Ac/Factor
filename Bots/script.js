@@ -44,5 +44,5 @@ document.getElementById('copy-button').addEventListener('click', function () {
     const resultText = document.getElementById('result-text');
     resultText.select();
     document.execCommand('copy');
-
+    alert('متن کپی شد!');
 });
