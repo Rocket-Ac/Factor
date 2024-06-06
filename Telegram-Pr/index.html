@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="fa">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Virtual Number Bot</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1>
+        Telegram Premium
+    </h1>
+        <div id="form-container" class="hidden">
+            <form id="NumberBot" class="hidden">
+                
+                <label for="id">Customer Username : </label>
+                <input type="text" id="Customer-Username" name="Customer-Username" required><br>
+
+                <label for="id">Customer NumID : </label>
+                <input type="text" id="Customer-NumID" name="Customer-NumID" required><br>
+
+                <label for="plan">Select Plan : </label>
+                <select id="plan-selector" name="plan-selector">
+                    <option value="1Month">1Month</option>
+                    <option value="12Month">12Month</option>
+                </select><br>
+                
+                <label for="VirtualCard">VirtualCard : </label>
+                <select id="VirtualCard-selector" name="VirtualCard-selector">
+                    <option value="Main-1">Main-1</option>
+                    <option value="Main-2">Main-2</option>
+                </select><br>
+
+                <label for="VirtualCardCost">Virtual Card Cost : </label> 
+                <input type="number" id="VirtualCardCost" name="VirtualCardCost" required><br>
+
+                <label for="Vnumber">Virtual Number : </label> 
+                <input type="text" id="Vnumber" name="Vnumber" required><br>
+
+                <label for="VNumCost">Virtual Number Cost : </label> 
+                <input type="text" id="VNumCost" name="VNumCost" required><br>
+
+                <label for="AccountExpiry">Account Expiry : </label> 
+                <input type="date" id="AccountExpiry" name="AccountExpiry" required><br>
+                
+                <label for="Sold-Price">Sold Price : </label> 
+                <input type="number" id="Sold-Price" name="Sold-Price" required><br>
+                
+                <button type="submit">Send</button>
+
+            </form>
+            
+        </div>
+
+        <div id="result" class="hidden">
+            <textarea id="result-text" readonly></textarea>
+            <button id="copy-button">کپی</button>
+        </div>
+    <script src="script.js"></script>
+</body>
+</html>
