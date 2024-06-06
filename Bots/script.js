@@ -34,9 +34,15 @@ document.getElementById('NumberBot').addEventListener('submit', function (e) {
     document.getElementById('result').classList.remove('hidden');
 });
 
-document.getElementById('copy-button').addEventListener('click', function () {
+/* document.getElementById('copy-button').addEventListener('click', function () {
     const resultText = document.getElementById('result-text');
     resultText.select();
     document.execCommand('copy');
     alert('متن کپی شد!');
+    */
+document.getElementById('copy-button').addEventListener('click', function () {
+    const resultText = document.getElementById('result-text');
+    resultText.select();
+    document.execCommand('copy');
+
 });
